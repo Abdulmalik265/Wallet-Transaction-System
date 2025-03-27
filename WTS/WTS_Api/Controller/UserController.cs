@@ -19,7 +19,6 @@ public class UserController : ControllerBase
         try
         {
             var response = await _userRegistration.RegisterAsync(user);
-           
             return Ok(new ResponseDto<User>()
             {
                 Data = response,
